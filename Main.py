@@ -15,6 +15,8 @@ if status=="родитель-одиночка":
         print(0.35*revenue)
     elif 432201<=revenue:
         print(0.396*revenue)
+        
+       
 if status=="один субъект":
     if 0<=revenue<=9075:
         tax=0.1*revenue
@@ -30,3 +32,20 @@ if status=="один субъект":
         tax = 0.35 * revenue
     elif 406751 <= revenue:
         tax = 0.396 * revenue
+        
+        
+if status == 'для супружеской пары':
+    if 0<=revenue<=18150:
+        print(0.1*revenue)
+    elif 18151<=revenue<=73800:
+        print(0.15*revenue)
+    elif 73801<=revenue<=148850:
+        print(0.25*revenue)
+    elif 148851<=revenue<=226850:
+        print(0.28*revenue)
+    elif 226851<=revenue<=405100:
+        print(0.33*revenue)
+    elif 405101<=revenue<=457600:
+        print(0.35*revenue)
+    elif 457601<=revenue:
+        print(0.396*revenue)
