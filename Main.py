@@ -1,3 +1,7 @@
+# Case-study #1
+# Developers:   Aksenov A. (43%),
+#               Soloveychik D. (39%),
+#               Labuzov A. (41%)
 status=input("Какой у вас статус? ")
 taxfree=int(input("Какая сумма не облагается налогом? "))
 tax=0
@@ -91,7 +95,7 @@ for i in range (0,12):
         
 for i in range(0, 12):
 
-    if status == "для супружеской пары":
+    if status == "супружеская пара":
         if 0 <= a[i] - taxfree <= 18150:
             tax = tax + (a[i] - taxfree) * 0.1
         elif 18151 <= a[i] - taxfree <= 73800:
@@ -128,5 +132,5 @@ for i in range(0, 12):
             tax += (73800 - 18151) * 0.15
             tax += (18150) * 0.1
 
-
-print(tax)
+tax=round(tax,2)
+print("Сумма налога",tax)
